@@ -61,7 +61,7 @@
           <p class="pb-2">The application is hosted on a Digital Ocean droplet and uses Dokku for management and deployment.</p>
           <p class="pb-2">Built with Python/Django/PostgresSQL/TailwindCSS/AlpineJS</p>
         </div>
-        <div class="pb-4 flex justify-center">
+        <div class="pb-4 flex flex-col sm:flex-row justify-center text-center">
           <a class="mt-2 mx-6 py-2 px-10 bg-green-900 text-white text-xl font-semibold hover:shadow-xl hover:bg-green-700 transition-all duration-150 ease-in-out" href="https://github.com/dherskowitz/frumphilly_site" target="_blank">Github</a>
           <a class="mt-2 mx-6 py-2 px-10 bg-green-900 text-white text-xl font-semibold hover:shadow-xl hover:bg-green-700 transition-all duration-150 ease-in-out" href="https://www.frumphilly.com/" target="_blank">Website</a>
         </div>

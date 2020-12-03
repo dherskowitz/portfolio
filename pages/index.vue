@@ -57,12 +57,12 @@
 
     <MyWork class="flex flex-col md:hidden" />
 
-    <div class="col-span-6 md:col-span-3 p-6 flex flex-col items-center border-gray-800 border-2 justify-center text-center">
-      <a href="/aboutme" class="inline-block bg-green-900 text-3xl font-semibold text-white px-4 py-2 hover:shadow-xl hover:bg-green-700 transition-all duration-150 ease-in-out">My History & Experience</a>
+    <div class="col-span-6 md:col-span-3 py-16 md:py-0 flex flex-col items-center border-gray-800 border-2 justify-center text-center">
+      <a href="/aboutme" class="inline-block bg-green-900 text-xl md:text-2xl lg:text-3xl font-semibold text-white px-4 py-2 hover:shadow-xl hover:bg-green-700 transition-all duration-150 ease-in-out">My History & Experience</a>
     </div>
 
-    <div class="col-span-6 md:col-span-3 p-6 flex flex-col items-center border-gray-800 border-2 justify-center text-center bg-green-900">
-      <a href="/Daniel Herskowitz Resume.pdf" target="_blank" class="inline-block bg-green-600 text-3xl font-semibold text-white px-4 py-2 hover:shadow-xl hover:bg-green-700 transition-all duration-150 ease-in-out capitalize">Download my resume as a PDF</a>
+    <div class="col-span-6 md:col-span-3 px-4 py-16 md:py-0 flex flex-col items-center border-gray-800 border-2 justify-center text-center bg-green-900">
+      <a href="/Daniel Herskowitz Resume.pdf" target="_blank" class="inline-block bg-green-600 text-xl md:text-2xl lg:text-3xl font-semibold text-white px-4 py-2 hover:shadow-xl hover:bg-green-700 transition-all duration-150 ease-in-out capitalize">Download my resume as a PDF</a>
     </div>
   </div>
 </template>

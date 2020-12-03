@@ -35,5 +35,6 @@ div#__nuxt,
 *::after {
   box-sizing: border-box;
   margin: 0;
+  word-break: break-word;
 }
 </style>
