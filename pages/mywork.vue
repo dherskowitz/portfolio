@@ -11,11 +11,18 @@
         <p class="pb-2">Projects at Hertz Furniture are built using PHP/Yii Framework/JavaScript/Webix UI/ Webix Jet/MySQL/Airtable</p>
         <div class="mt-2">
           <div class="text-xl">Vendor Portal</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat ducimus quis?</div>
+          <div>
+            <p class="pb-2">A single page application for managing the pipeline of products and product data from the vendor to the Hertz Furniture website built with a PHP backend and a Webix/Jet frontend. </p>
+            <p class="pb-2">The application contains separate views for the vendor and for Hertz Furniture employees with data visibility and application functionality changing based on the user type. The UI gets updated as a user enters data and some additional sections may or may not be required.</p>
+          </div>
         </div>
         <div class="mt-2">
-          <div class="text-xl">Order Entry</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat ducimus quis?</div>
+          <div class="text-xl">Order Entry & Management Portal</div>
+          <div>
+            <p class="pb-2">A single page application built to replace functionality from an IBM AS-400 system. The application consists of a number of modules with varying functionality based around data entry and reporting.</p>
+            <p class="pb-2">The Order Entry module is where Hertz Furniture employees can create and track orders. During this process employees have the option to create and manage customers data and view customer data including purchase and payment history.</p>
+            <p class="pb-2">The Information module contains reporting for products, vendors, and customers. The main view for each section contains a datatable with basic information. Details for each item in the datatable are available in a panel on selecting an item.</p>
+          </div>
         </div>
         <div class="mt-2">
           <div class="text-xl">Ionic App</div>
@@ -127,3 +134,18 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+    head: {
+        title: 'My Work | Daniel Herskowitz | Full Stack Developer | Jerusalem | NY',
+        meta: [
+            {
+                hid: 'description',
+                name: 'description',
+                content: 'Portfolio of my work.'
+            }
+        ]
+    }
+};
+</script>
