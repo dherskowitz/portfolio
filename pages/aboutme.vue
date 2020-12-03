@@ -4,8 +4,12 @@
       <Header />
       <Nav />
     </section>
-    <section class="container my-6">
-      <h1>About Me</h1>
+    <section class="container my-16 pb-16 text-gray-800">
+      <div class="p-6 text-xl border-2 border-gray-800">
+        <h1 class="text-5xl font-semibold">About Me</h1>
+        <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde nisi, libero rem ducimus labore explicabo vero corporis porro deserunt.</p>
+      </div>
+      <div class="p-6 mt-6 border-2 border-gray-800"></div>
     </section>
   </div>
 </template>
