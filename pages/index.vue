@@ -1,36 +1,37 @@
 <template>
   <div class="grid grid-cols-6 grid-rows-7 md:grid-rows-3 h-screen">
-    <div class="col-span-6 md:col-span-4 px-6 bg-purple-900 text-white flex items-center border-gray-800 border-2">
-      <div class="">
-        <h1 class="text-5xl font-semibold">Daniel Herskowitz</h1>
-        <h2 class="text-6xl font-semibold">Full Stack Developer</h2>
+    <div class="col-span-6 md:col-span-4 p-6 bg-purple-900 text-white flex items-center justify-center md:justify-start border-gray-800 border-2">
+      <div class="text-center md:text-left">
+        <h1 class="text-3xl lg:text-5xl font-semibold text-gray-400">Daniel Herskowitz</h1>
+        <h2 class="text-4xl lg:text-6xl font-semibold text-gray-200">Full Stack Developer</h2>
       </div>
     </div>
-    <div class="col-span-6 md:col-span-2 px-6 flex flex-col justify-center items-center border-gray-800 border-2">
-      <div class="text-3xl">Jerusalem, IL</div>
-      <div class="text-6xl">{{ timeInJerusalem }}</div>
+    <div class="col-span-6 md:col-span-2 p-6 flex flex-col justify-center items-center border-gray-800 border-2">
+      <div class="text-xl lg:text-3xl">Time In Jerusalem, IL</div>
+      <div class="text-4xl lg:text-5xl xl:text-6xl">{{ timeInJerusalem }}</div>
     </div>
 
-    <div class="col-span-3 md:col-span-1 px-6 flex items-center justify-center border-gray-800 border-2">
+    <div class="col-span-3 md:col-span-1 p-6 flex items-center justify-center border-gray-800 border-2">
       <a href="https://www.linkedin.com/in/daniel-herskowitz-105/" target="_blank" class="inline-block bg-green-900 text-white px-4 py-2 shadow-md hover:scale-110 hover:rotate-6 transition-all transform duration-200">LinkedIn</a>
     </div>
 
-    <MyWork class="hidden md:flex" />
+    <MyWork class="hidden flex-col md:flex" />
 
-    <div class="col-span-3 md:col-span-1 px-6 flex items-center justify-center border-gray-800 border-2">
+    <div class="col-span-3 md:col-span-1 p-6 flex items-center justify-center border-gray-800 border-2">
       <a href="https://github.com/dherskowitz" target="_blank" class="inline-block bg-green-900 text-white px-4 py-2 shadow-md hover:scale-110 hover:rotate-6 transition-all transform duration-200">Github</a>
     </div>
 
-    <MyWork class="flex md:hidden" />
+    <MyWork class="flex flex-col md:hidden" />
 
-    <div class="col-span-6 md:col-span-3 px-6 flex items-center border-gray-800 border-2 justify-center">
-      <div>My Resume</div>
-      <div>A page with my resume and accordian to expand and read about the work I did.
-      </div>
+    <div class="col-span-6 md:col-span-3 p-6 flex flex-col items-center border-gray-800 border-2 justify-center text-center">
+      <!-- <div class="text-4xl text-gray-900 mb-1">About Me</div> -->
+      <div class="text-2xl lg:text-4xl text-gray-900 mb-4 capitalize">My history & experience</div>
+      <a href="#" class="inline-block bg-green-900 text-white px-4 py-2 shadow-md hover:scale-110 hover:rotate-6 transition-all transform duration-200">About Me</a>
     </div>
 
-    <div class="col-span-6 md:col-span-3 px-6 flex items-center border-gray-800 border-2 justify-center">
-      <a href="/Daniel Herskowitz Resume.pdf" target="_blank" class="inline-block bg-green-900 text-white px-4 py-2 shadow-md hover:scale-110 hover:rotate-6 transition-all transform duration-200">Download My Resume</a>
+    <div class="col-span-6 md:col-span-3 p-6 flex flex-col items-center border-gray-800 border-2 justify-center text-center">
+      <p class="text-2xl lg:text-4xl text-gray-900 mb-4 capitalize">My Resume</p>
+      <a href="/Daniel Herskowitz Resume.pdf" target="_blank" class="inline-block bg-green-900 text-white px-4 py-2 shadow-md hover:scale-110 hover:rotate-6 transition-all transform duration-200 capitalize">Download my resume as a PDF</a>
     </div>
   </div>
 </template>

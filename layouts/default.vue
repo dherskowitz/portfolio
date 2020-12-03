@@ -20,6 +20,7 @@ html {
 html,
 body {
   height: 100%;
+  background: #E5E7EB;
 }
 
 div#__nuxt,
