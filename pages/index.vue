@@ -40,26 +40,26 @@
 
 <script>
 export default {
-  data () {
-    return {
-      timeInJerusalem: '',
-      interval: 0
-    };
-  },
-  mounted () {
-    this.interval = setInterval(this.getTimeInJerusalem, 1000);
-  },
-  methods: {
-    getTimeInJerusalem () {
-      const options = {
-        timeZone: 'Asia/Jerusalem',
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric'
-      };
-      const formatter = new Intl.DateTimeFormat([], options);
-      this.timeInJerusalem = formatter.format(new Date());
+    data () {
+        return {
+            timeInJerusalem: '',
+            interval: 0
+        };
+    },
+    mounted () {
+        this.interval = setInterval(this.getTimeInJerusalem, 1000);
+    },
+    methods: {
+        getTimeInJerusalem () {
+            const options = {
+                timeZone: 'Asia/Jerusalem',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric'
+            };
+            const formatter = new Intl.DateTimeFormat([], options);
+            this.timeInJerusalem = formatter.format(new Date());
+        }
     }
-  }
 };
 </script>
