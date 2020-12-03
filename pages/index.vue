@@ -10,6 +10,7 @@
       </div>
       <div class="text-4xl lg:text-5xl xl:text-6xl">
         {{ timeInJerusalem }}
+        <div v-if="!timeInJerusalem" class="text-gray-900 bg-gray-900 w-full overflow-hidden animate-pulse" style="height:6rem;">loading...</div>
       </div>
     </div>
 
