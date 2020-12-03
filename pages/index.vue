@@ -60,6 +60,16 @@ export default {
             const formatter = new Intl.DateTimeFormat([], options);
             this.timeInJerusalem = formatter.format(new Date());
         }
+    },
+    head: {
+        title: 'Daniel Herskowitz | Full Stack Developer | Jerusalem | NY',
+        meta: [
+            {
+                hid: 'description',
+                name: 'description',
+                content: 'Full stack developer based in Jerusalem and New York'
+            }
+        ]
     }
 };
 </script>
