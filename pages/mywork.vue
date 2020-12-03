@@ -8,53 +8,48 @@
       <div class="col-span-3 md:col-span-2 lg:col-span-3 p-6 border-2 border-gray-800">
         <div class="text-5xl text-purple-900">Hertz Furniture</div>
         <div class="text-2xl">Some of the projects I have worked on while employed at Hertz Furniture:</div>
-        <p class="pb-2">Projects at Hertz Furniture are built using PHP/Yii Framework/JavaScript/Webix UI/ Webix Jet/MySQL/Airtable</p>
-        <div class="mt-2">
-          <div class="text-xl">Vendor Portal</div>
-          <div>
-            <p class="pb-2">A single page application for managing the pipeline of products and product data from the vendor to the Hertz Furniture website built with a PHP backend and a Webix/Jet frontend. </p>
-            <p class="pb-2">The application contains separate views for the vendor and for Hertz Furniture employees with data visibility and application functionality changing based on the user type. The UI gets updated as a user enters data and some additional sections may or may not be required.</p>
+        <p class="pb-2">Projects at Hertz Furniture are built using PHP/Yii Framework/JavaScript/Webix UI/ Webix Jet/MySQL/Airtable/WordPress</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="mt-2 border-2 border-gray-600 p-4 border-2 border-gray-600 p-4">
+            <div class="text-xl">Vendor Portal</div>
+            <p class="pb-2">A single page application for managing the pipeline of products and product data from vendors to the Hertz Furniture website.</p>
           </div>
-        </div>
-        <div class="mt-2">
-          <div class="text-xl">Order Entry & Management Portal</div>
-          <div>
+          <div class="mt-2 border-2 border-gray-600 p-4">
+            <div class="text-xl">Order Entry & Management Portal</div>
             <p class="pb-2">A single page application built to replace functionality from an IBM AS-400 system. The application consists of a number of modules with varying functionality based around data entry and reporting.</p>
-            <p class="pb-2">The Order Entry module is where Hertz Furniture employees can create and track orders. During this process employees have the option to create and manage customers data and view customer data including purchase and payment history.</p>
-            <p class="pb-2">The Information module contains reporting for products, vendors, and customers. The main view for each section contains a datatable with basic information. Details for each item in the datatable are available in a panel on selecting an item.</p>
           </div>
-        </div>
-        <div class="mt-2">
-          <div class="text-xl">Ionic App</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat ducimus quis?</div>
-        </div>
-        <div class="mt-2">
-          <div class="text-xl">Airtable Sync</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat ducimus quis?</div>
-        </div>
-        <div class="mt-2">
-          <div class="text-xl">trello sync</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat ducimus quis?</div>
-        </div>
-        <div class="mt-2">
-          <div class="text-xl">Order Files Fetching</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat ducimus quis?</div>
-        </div>
-        <div class="mt-2">
-          <div class="text-xl">Leads response</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat ducimus quis?</div>
-        </div>
-        <div class="mt-2">
-          <div class="text-xl">Email Signature Generator</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat ducimus quis?</div>
-        </div>
-        <div class="mt-2">
-          <div class="text-xl">Instagram Page</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat ducimus quis?</div>
-        </div>
-        <div class="mt-2">
-          <div class="text-xl">Gallery Page</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat ducimus quis?</div>
+          <div class="mt-2 border-2 border-gray-600 p-4">
+            <div class="text-xl">Ionic App</div>
+            <p class="pb-2">A mobile catalog application built with Ionic and Angular.</p>
+          </div>
+          <div class="mt-2 border-2 border-gray-600 p-4">
+            <div class="text-xl">Airtable Sync</div>
+            <p class="pb-2">A script to grab data from multiple Airtable bases/tables and create tables in the local MySQL database.</p>
+          </div>
+          <div class="mt-2 border-2 border-gray-600 p-4">
+            <div class="text-xl">Trello Sync</div>
+            <p class="pb-2">A script to grab data from multiple Trello boards/cards and create a report based on the collected data.</p>
+          </div>
+          <div class="mt-2 border-2 border-gray-600 p-4">
+            <div class="text-xl">Order Files Fetching</div>
+            <p class="pb-2">A script to connect to an email account, get the unread email, save the attachments, and mark each processed email as read. Used in leiu of an API from the service provider.</p>
+          </div>
+          <div class="mt-2 border-2 border-gray-600 p-4">
+            <div class="text-xl">Leads response</div>
+            <p class="pb-2">Added the functionality to respond to a lead from the existing leads datatable using the data from the lead and a modal to view and send the response.</p>
+          </div>
+          <div class="mt-2 border-2 border-gray-600 p-4">
+            <div class="text-xl">Email Signature Generator</div>
+            <p class="pb-2">Generates a company email signature based on current user and company role. User can do limited additional customization and copy the result to be pasted in their preferred email client.</p>
+          </div>
+          <div class="mt-2 border-2 border-gray-600 p-4">
+            <div class="text-xl">Instagram Page</div>
+            <p class="pb-2">A landing page linked to in the company Instagram account with data retrieved from a WordPress REST API.</p>
+          </div>
+          <div class="mt-2 border-2 border-gray-600 p-4">
+            <div class="text-xl">Gallery Page</div>
+            <p class="pb-2">A gallery page originally retrieving content from Airtable using the API and later converted to use local data synced from Airtable.</p>
+          </div>
         </div>
       </div>
       <div class="col-span-3 md:col-span-2 lg:col-span-3 p-6 border-2 border-gray-800">
