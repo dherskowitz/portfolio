@@ -7,10 +7,10 @@
     <section class="container my-16 pb-16 text-gray-800 text-xl">
       <div class="py-8 px-6 md:px-16 border-2 border-gray-800">
         <h1 class="text-5xl font-bold">About Me</h1>
-        <p class="pb-2">Hi! I am self taught developer originally from Brooklyn, NY and currently based in Jerusalem, IL.</p>
-        <p class="pb-2">I have been working as a full stack developer for around 5 years with additional experience in the front end.</p>
+        <p class="pb-2">Hi! I am a self taught developer originally from Brooklyn, NY and currently based in Jerusalem, Israel.</p>
+        <p class="pb-2">I have been working as a full stack developer for approximately 5 years with additional experience in the front end.</p>
         <p class="pb-2">I work with Python, PHP, JavaScript, SQL, Git, HTML, and CSS/SCSS.</p>
-        <p class="pb-2">I also work with Django, Yii, Laravel, Vue, Angular, Node, Webix/Jet,  and WordPress</p>
+        <p class="pb-2">I also work with Django, Yii, Laravel, Vue, Angular, Node, Webix/Jet, and WordPress</p>
         <p class="pb-2">Additionally, I am familiar with Linux, Apache, Nginx, Docker, Vagrant, AWS services, Digital Ocean, and Dokku.</p>
         <p class="pb-2">I can be contacted on <a href="https://www.linkedin.com/in/daniel-herskowitz-105/" target="_blank" class="text-green-900 underline">my LinkedIn page.</a></p>
       </div>

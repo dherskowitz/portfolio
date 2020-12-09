@@ -6,7 +6,7 @@
       class="col-span-6 md:col-span-2 p-6 flex flex-col justify-center items-center border-gray-800 border-2"
     >
       <div class="text-xl lg:text-3xl">
-        Time In Jerusalem, IL
+        Time In Jerusalem, Israel
       </div>
       <div class="text-4xl lg:text-5xl xl:text-6xl">
         {{ timeInJerusalem }}
