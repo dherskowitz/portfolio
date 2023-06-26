@@ -1,0 +1,182 @@
+{
+    "small": [
+        {
+            "title": "Frum Philly ",
+            "description": "A fullstack Django application for the Philadelphia and South Jersey Jewish communities.",
+            "stack": "Python / Django / PostgresSQL / TailwindCSS / AlpineJS ",
+            "buttons": [
+                {
+                    "title": "Github",
+                    "link": "https://github.com/dherskowitz/firefox-right-click-search"
+                },
+                {
+                    "title": "Firefox Add-Ons Page",
+                    "link": "https://addons.mozilla.org/en-US/firefox/addon/right-click-search/"
+                }
+            ]
+        },
+        {
+            "title": "Firefox Right Click Search ",
+            "description": "A Firefox browser add-on to search a saved search engine from the context menu. ",
+            "stack": "JavaScript",
+            "buttons": [
+                {
+                    "title": "Github",
+                    "link": "https://github.com/dherskowitz/firefox-right-click-search"
+                },
+                {
+                    "title": "Firefox Add-Ons Page",
+                    "link": "https://addons.mozilla.org/en-US/firefox/addon/right-click-search/"
+                }
+            ]
+        },
+        {
+            "title": "Firefox Convert HTTP Bookmarks ",
+            "description": "A Firefox extension to find all HTTP bookmarks and convert them to HTTPS. ",
+            "stack": "JavaScript",
+            "buttons": [
+                {
+                    "title": "Github",
+                    "link": "https://github.com/dherskowitz/firefox-convert-http-bookmarks"
+                },
+                {
+                    "title": "Firefox Add-Ons Page",
+                    "link": "https://addons.mozilla.org/en-US/firefox/addon/bookmarks-to-https/"
+                }
+            ]
+        },
+        {
+            "title": "Dollar-to-NIS ",
+            "description": "A Progressive Web App to convert between USD & NIS. ",
+            "stack": "JavaScript / Gridsome ",
+            "buttons": [
+                {
+                    "title": "Github",
+                    "link": "https://github.com/dherskowitz/dollar-to-nis"
+                },
+                {
+                    "title": "Website",
+                    "link": "https://dollar-to-nis.vercel.app/"
+                }
+            ]
+        },
+        {
+            "title": "What Time Is Shabbos ",
+            "description": "A Progressive Web App to get the Sabbath start/end times for a given region. ",
+            "stack": "JavaScript / Gridsome / Python / AWS Lambda ",
+            "buttons": [
+                {
+                    "title": "Github",
+                    "link": "https://github.com/dherskowitz/whatTimeIsShabbos"
+                },
+                {
+                    "title": "Website",
+                    "link": "https://what-time-is-shabbos.vercel.app/"
+                }
+            ]
+        },
+        {
+            "title": "Safari Judaica ",
+            "description": "A sample JAMstack site using Airtable as a Database and product data copied from safarijudaica.com with permission from the site owner. ",
+            "stack": "JavaScript / Gridsome / Airtable ",
+            "buttons": [
+                {
+                    "title": "Github",
+                    "link": "https://github.com/dherskowitz/safari-judaica"
+                },
+                {
+                    "title": "Website",
+                    "link": "https://safari-judaica.vercel.app/"
+                }
+            ]
+        },
+        {
+            "title": "Tal Chaim ",
+            "description": "A static site with a serverless contact form submitting to an AWS Lambda function which uses AWS SES to send an email to the site owner. ",
+            "stack": "JavaScript / Gridsome ",
+            "buttons": [
+                {
+                    "title": "Website",
+                    "link": "https://talchaim.com/"
+                }
+            ]
+        },
+        {
+            "title": "Mirror Image",
+            "description": "A static site for a Philadelphia business. ",
+            "stack": "JavaScript / Gridsome ",
+            "buttons": [
+                {
+                    "title": "Website",
+                    "link": "https://showerdoorsphiladelphia.com/"
+                }
+            ]
+        },
+        {
+            "title": "DJ Locksmith ",
+            "description": "A static site for a Jerusalem area business. ",
+            "stack": "HTML / CSS / JavaScript ",
+            "buttons": [
+                {
+                    "title": "Website",
+                    "link": "https://dj-locksmith.com/"
+                }
+            ]
+        }
+    ],
+    "large": [
+        {
+            "title": "Eastern Drayage",
+            "subtitle": "Some of the projects I worked on while employed at Eastern Drayage:",
+            "stack": "",
+            "projects": []
+        },
+        {
+            "title": "Hertz Furniture",
+            "subtitle": "Some of the projects I worked on while employed at Hertz Furniture: ",
+            "stack": "Projects at Hertz Furniture were built using PHP / Yii Framework / JavaScript / Webix UI / Webix Jet / MySQL / Airtable / WordPress",
+            "projects": [
+                {
+                    "title": "Vendor Portal ",
+                    "description": "A single page application for managing the pipeline of products and product data from vendors to the Hertz Furniture website. "
+                },
+                {
+                    "title": "Order Entry & Management Portal ",
+                    "description": "A single page application built to replace functionality from an IBM AS-400 system. The application consists of a number of modules with varying functionality based around data entry and reporting. "
+                },
+                {
+                    "title": "Ionic App ",
+                    "description": "A mobile catalog application built with Ionic and Angular. "
+                },
+                {
+                    "title": "Airtable Sync ",
+                    "description": "A script to grab data from multiple Airtable bases/tables and create tables in the local MySQL database. "
+                },
+                {
+                    "title": "Trello Sync ",
+                    "description": "A script to grab data from multiple Trello boards/cards and create a report based on the collected data. "
+                },
+                {
+                    "title": "Order Files Fetching ",
+                    "description": "A script to connect to an email account, get the unread email, save the attachments, and mark each processed email as read. Used in leiu of an API from the service provider. "
+                },
+                {
+                    "title": "Leads response ",
+                    "description": "Added the functionality to respond to a lead from the existing leads datatable using the data from the lead and a modal to view and send the response. "
+                },
+                {
+                    "title": "Email Signature Generator ",
+                    "description": "Generates a company email signature based on current user and company role. User can do limited additional customization and copy the result to be pasted in their preferred email client. "
+                },
+                {
+                    "title": "Instagram Page ",
+                    "description": "A landing page linked to in the company Instagram account with data retrieved from a WordPress REST API. "
+                },
+                {
+                    "title": "Gallery Page ",
+                    "description": "A gallery page originally retrieving content from Airtable using the API and later converted to use local data synced from Airtable. "
+                }
+            ]
+        }
+    ]
+}

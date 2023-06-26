@@ -1,0 +1,40 @@
+{
+    "jobs": [
+        {
+            "company": "Eastern Drayage",
+            "title": "Software Developer / Project Manager",
+            "timeframe": "May 2022 - current)",
+            "description": "Currently employed as a software developer and project manager for a national logistics and drayage company."
+        },
+        {
+            "company": "Hertz Furniture",
+            "title": "Full Stack Developer",
+            "timeframe": "4 years 8 months (October 2017 - April 2022)",
+            "description": "Remote Full Stack Developer for a New Jersey based furniture and design company. Worked on projects such as Single Page Applications, automation and scripting, backend and API development, front end development and UI/UX, mobile development in the Ionic framework, as well as a number of other projects both large and small. "
+        },
+        {
+            "company": "HY Enterprises (aka iDingo, iMonty)",
+            "title": "Full Stack Developer",
+            "timeframe": "1 years 9 months (February 2016 - October 2017)",
+            "description": "Full Stack Developer at a marketing/direct sales company. Worked as part of a team developing multiple marketing and e-commerce sites using PHP, JavaScript, jQuery, MySQL, Git, HTML/CSS, and WordPress. Managed existing and set up multiple additional Virtual Private Servers with a LAMP stack configuration. Handled basic IT related tasks including software and hardware troubleshooting and repairs. "
+        },
+        {
+            "company": "BRH Medical South Africa",
+            "title": "Consultant",
+            "timeframe": "5 Month Consultancy",
+            "description": "A short term contract as part of the team setting up the South African branch of an Israeli BioMedical company. Constructed multiple websites; helped design and implement a marketing plan and helped develop relationships between the company and third parties such as medical personnel and potential partners. "
+        },
+        {
+            "company": "Sequoia Development Group",
+            "title": "IT and Web Developer",
+            "timeframe": " 2 Years (2013 - 2015)",
+            "description": "IT and Web Developer for a startup real estate development firm. Oversaw the setup of a new office including purchase and installation of all computers, printers, and network gear/PBX. Developed websites and internal tools and handled all IT related tasks. "
+        },
+        {
+            "company": "JCN Network DBA Old Junk Car",
+            "title": "IT and Web Developer",
+            "timeframe": "2 Years (2011 - 2013)",
+            "description": "IT and Web Developer working with Wordpress, CSS, HTML, PHP and Javascript. Managed and maintained all employee computers, on premises windows server, and the network room for all connected systems. Repaired systems as needed including replacing parts and services. "
+        }
+    ]
+}
