@@ -1,33 +1,48 @@
 ---
 const pathname = Astro.url.pathname;
-// const currentPath = pathname.slice(1); // remove the first "/"
+const normalizedPath = pathname.replace(/\/$/, '') || '/';
 ---
 
 <nav
-  class="flex items-center justify-around col-span-12 p-6 bg-[color:var(--surface-2)] border-2 border-[color:var(--line)] md:col-span-5 md:flex-col xl:flex-row md:border-l-2 reveal reveal-delay-1"
+  class="flex items-center justify-around col-span-12 p-6 bg-amber-50 border-2 border-slate-200 md:col-span-5 md:flex-col xl:flex-row md:border-l-2 reveal reveal-delay-1"
 >
   <a
     href="/"
-    class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}
+    aria-current={normalizedPath === '/' ? 'page' : undefined}
+    class:list={[
+      'p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-emerald-700 hover:border-emerald-700',
+      { 'text-emerald-700 border-emerald-700': normalizedPath === '/' }
+    ]}
   >
     Home
   </a>
   <a
     href="/my-work/"
-    aria-current="page"
-    class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/my-work/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}
+    aria-current={normalizedPath === '/my-work' ? 'page' : undefined}
+    class:list={[
+      'p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-emerald-700 hover:border-emerald-700',
+      { 'text-emerald-700 border-emerald-700': normalizedPath === '/my-work' }
+    ]}
   >
     My Work
   </a>
   <a
     href="/about-me/"
-    class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/about-me/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}
+    aria-current={normalizedPath === '/about-me' ? 'page' : undefined}
+    class:list={[
+      'p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-emerald-700 hover:border-emerald-700',
+      { 'text-emerald-700 border-emerald-700': normalizedPath === '/about-me' }
+    ]}
   >
     About Me
   </a>
   <a
     href="/contact-me/"
-    class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/contact-me/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}
+    aria-current={normalizedPath === '/contact-me' ? 'page' : undefined}
+    class:list={[
+      'p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-emerald-700 hover:border-emerald-700',
+      { 'text-emerald-700 border-emerald-700': normalizedPath === '/contact-me' }
+    ]}
   >
     Contact Me
   </a>
