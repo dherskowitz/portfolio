@@ -3,14 +3,16 @@ import Header from '../components/Header.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { companies, personalProjects } from '../projects.json';
 
-const visiblePersonalProjects = personalProjects.filter((project) => project.show);
+const visiblePersonalProjects = personalProjects.filter(
+  (project) => project.show
+);
 ---
 
 <BaseLayout>
   <Header />
 
   <section
-    class="container m-4 text-slate-900 mx-auto px-4 flex gap-4 flex-col page-fade"
+    class="container m-4 text-slate-900 mx-auto px-4 pb-4 flex gap-4 flex-col page-fade"
   >
     {
       companies.map((project) => {
@@ -43,46 +45,42 @@ const visiblePersonalProjects = personalProjects.filter((project) => project.sho
 
   {
     visiblePersonalProjects.length > 0 && (
-      <section
-        class="container m-4 text-slate-900 mx-auto px-4 flex gap-4 flex-col"
-      >
-        <div
-          class="col-span-3 p-6 border-2 border-[color:var(--line)] bg-white/80 backdrop-blur md:col-span-2 lg:col-span-3 reveal reveal-delay-1"
-        >
-          <div class="text-5xl font-bold pb-4 font-display">Personal Projects</div>
+      <section class="container m-4 text-slate-900 mx-auto px-4 flex gap-4 flex-col">
+        <div class="col-span-3 p-6 border-2 border-[color:var(--line)] bg-white/80 backdrop-blur md:col-span-2 lg:col-span-3 reveal reveal-delay-1">
+          <div class="text-5xl font-bold pb-4 font-display">
+            Personal Projects
+          </div>
           <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {
-              visiblePersonalProjects.map((project) => {
-                return (
-                  <div class="flex flex-col justify-between col-span-3 p-6 border-2 border-[color:var(--line)] bg-[color:var(--surface-2)] md:col-span-1">
-                    <div class="text-xl font-bold text-slate-900">
-                      {project.title}
-                    </div>
-                    <p class="pb-2 break-words text-slate-600">
-                      Built with {project.stack}
-                    </p>
-                    <div class="pb-2 text-slate-700">{project.description}</div>
-                    <div>
-                      {project.buttons.map((button) => {
-                        if (!button.link) {
-                          return null;
-                        }
-
-                        return (
-                          <a
-                            href={button.link}
-                            target="_blank"
-                            class="block px-10 py-2 mt-2 text-base font-semibold text-center text-white transition-all duration-200 ease-in-out bg-[color:var(--accent-2)] hover:shadow-xl hover:-translate-y-0.5 hover:bg-emerald-600"
-                          >
-                            {button.title}
-                          </a>
-                        );
-                      })}
-                    </div>
+            {visiblePersonalProjects.map((project) => {
+              return (
+                <div class="flex flex-col justify-between col-span-3 p-6 border-2 border-[color:var(--line)] bg-[color:var(--surface-2)] md:col-span-1">
+                  <div class="text-xl font-bold text-slate-900">
+                    {project.title}
                   </div>
-                );
-              })
-            }
+                  <p class="pb-2 break-words text-slate-600">
+                    Built with {project.stack}
+                  </p>
+                  <div class="pb-2 text-slate-700">{project.description}</div>
+                  <div>
+                    {project.buttons.map((button) => {
+                      if (!button.link) {
+                        return null;
+                      }
+
+                      return (
+                        <a
+                          href={button.link}
+                          target="_blank"
+                          class="block px-10 py-2 mt-2 text-base font-semibold text-center text-white transition-all duration-200 ease-in-out bg-[color:var(--accent-2)] hover:shadow-xl hover:-translate-y-0.5 hover:bg-emerald-600"
+                        >
+                          {button.title}
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
