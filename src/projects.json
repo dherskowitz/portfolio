@@ -1,7 +1,8 @@
 {
-    "small": [
+    "personalProjects": [
         {
             "title": "Frum Philly ",
+            "show": false,
             "description": "A fullstack Django application for the Philadelphia and South Jersey Jewish communities.",
             "stack": "Python / Django / PostgresSQL / TailwindCSS / AlpineJS ",
             "buttons": [
@@ -17,6 +18,7 @@
         },
         {
             "title": "Firefox Right Click Search ",
+            "show": false,
             "description": "A Firefox browser add-on to search a saved search engine from the context menu. ",
             "stack": "JavaScript",
             "buttons": [
@@ -32,6 +34,7 @@
         },
         {
             "title": "Firefox Convert HTTP Bookmarks ",
+            "show": false,
             "description": "A Firefox extension to find all HTTP bookmarks and convert them to HTTPS. ",
             "stack": "JavaScript",
             "buttons": [
@@ -47,6 +50,7 @@
         },
         {
             "title": "Dollar-to-NIS ",
+            "show": false,
             "description": "A Progressive Web App to convert between USD & NIS. ",
             "stack": "JavaScript / Gridsome ",
             "buttons": [
@@ -62,6 +66,7 @@
         },
         {
             "title": "What Time Is Shabbos ",
+            "show": false,
             "description": "A Progressive Web App to get the Sabbath start/end times for a given region. ",
             "stack": "JavaScript / Gridsome / Python / AWS Lambda ",
             "buttons": [
@@ -77,6 +82,7 @@
         },
         {
             "title": "Safari Judaica ",
+            "show": false,
             "description": "A sample JAMstack site using Airtable as a Database and product data copied from safarijudaica.com with permission from the site owner. ",
             "stack": "JavaScript / Gridsome / Airtable ",
             "buttons": [
@@ -92,8 +98,9 @@
         },
         {
             "title": "Tal Chaim ",
+            "show": false,
             "description": "A static site with a serverless contact form submitting to an AWS Lambda function which uses AWS SES to send an email to the site owner. ",
-            "stack": "JavaScript / Gridsome ",
+            "stack": "Astro",
             "buttons": [
                 {
                     "title": "Website",
@@ -102,34 +109,85 @@
             ]
         },
         {
-            "title": "Mirror Image",
-            "description": "A static site for a Philadelphia business. ",
-            "stack": "JavaScript / Gridsome ",
+            "title": "VidVault",
+            "show": false,
+            "description": "An Astro application connected to a Pocketbase backend to track and log Movies and TV Shows with data from TMDB",
+            "stack": "Astro",
             "buttons": [
                 {
                     "title": "Website",
-                    "link": "https://showerdoorsphiladelphia.com/"
-                }
-            ]
-        },
-        {
-            "title": "DJ Locksmith ",
-            "description": "A static site for a Jerusalem area business. ",
-            "stack": "HTML / CSS / JavaScript ",
-            "buttons": [
-                {
-                    "title": "Website",
-                    "link": "https://dj-locksmith.com/"
+                    "link": false
                 }
             ]
         }
     ],
-    "large": [
+    "companies": [
         {
             "title": "Eastern Drayage",
             "subtitle": "Some of the projects I worked on while employed at Eastern Drayage:",
-            "stack": "",
-            "projects": []
+            "stack": "Projects at Hertz Furniture were built using Python / Django / PHP / Laravel / Node.js / Vue / Ionic (Angular) / PostgreSQL / MySQL / AWS / Docker / Stedi (EDI) / CargoSnap",
+            "projects": [
+                {
+                    "title": "Core Operations Platform Modernization",
+                    "description": "Stabilization and enhancement of a legacy logistics application, reducing crashes, improving reliability, and enabling continued feature development without disrupting daily operations."
+                },
+                {
+                    "title": "Unified Inventory Management System",
+                    "description": "A consolidated inventory platform merging multiple disconnected systems into a single source of truth for operational and reporting workflows."
+                },
+                {
+                    "title": "EDI Event Processing & Integration Platform",
+                    "description": "An event-driven EDI system using database triggers and Python services to aggregate outbound events, process inbound queues, and automate order entry via the Stedi API."
+                },
+                {
+                    "title": "Emergency Data Backup & Resilience System",
+                    "description": "A Python-based emergency backup solution exporting critical operational data to CSV, eliminating reliance on a legacy backup process that degraded application performance."
+                },
+                {
+                    "title": "Customer Reporting & Data Export Platform",
+                    "description": "Custom reporting solutions developed in collaboration with customers and account managers, delivering tailored operational and financial data outputs per customer specifications."
+                },
+                {
+                    "title": "Driver Mobile Application (PWA)",
+                    "description": "A cross-platform driver application built with Ionic (Angular) for trip reporting, deployed as a Progressive Web App with architecture prepared for future App Store distribution."
+                },
+                {
+                    "title": "Driver SMS Automation System",
+                    "description": "An SMS chatbot enabling drivers to report port and terminal in-gate and out-gate activity, reducing manual communication and improving real-time operational visibility."
+                },
+                {
+                    "title": "Customer Portal",
+                    "description": "A Vue-based customer portal allowing customers to view shipment status and submit operational updates, powered by a Laravel API and deployed via AWS S3 with automated CI/CD."
+                },
+                {
+                    "title": "Multi-Service Laravel API & Admin Platform",
+                    "description": "A central Laravel-based API serving multiple internal and external systems, including customer portals, driver applications, and an internal administrative interface."
+                },
+                {
+                    "title": "Document Data Extraction & Processing System",
+                    "description": "A Django API leveraging Google Document AI to extract structured data from customer PDF files, delivering normalized JSON for downstream workflows."
+                },
+                {
+                    "title": "Bill of Lading (BOL) Creation Tool",
+                    "description": "A web-based workflow allowing users to review extracted document data and generate flatbed load Bills of Lading by selecting and validating imported line items."
+                },
+                {
+                    "title": "Driver Identity & Access Management System",
+                    "description": "An automated driver onboarding system with invitation-based account creation, email-driven password setup, and role-based access control across driver applications."
+                },
+                {
+                    "title": "CargoSnap Imaging Integration",
+                    "description": "Implementation and rollout of CargoSnap to standardize container, chassis, and cargo photo documentation, improving accountability, audit trails, and dispute resolution."
+                },
+                {
+                    "title": "Yard Information Dashboard & Kiosk System",
+                    "description": "A real-time yard operations dashboard deployed as a kiosk application in warehouse and yard offices to provide operational visibility to staff."
+                },
+                {
+                    "title": "Cloud Infrastructure Modernization",
+                    "description": "Migration from legacy servers to AWS-based infrastructure, including RDS, Elastic Beanstalk, PWA hosting, and Dockerized services for production systems."
+                }
+            ]
         },
         {
             "title": "Hertz Furniture",
