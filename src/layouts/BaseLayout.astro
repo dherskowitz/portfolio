@@ -12,7 +12,7 @@
     />
     <title>Daniel Herskowitz | Software Developer</title>
   </head>
-  <body class="bg-slate-100 text-slate-900 h-full">
+  <body class="bg-slate-100 text-slate-900 min-h-full">
     <slot />
   </body>
   <style>
@@ -43,6 +43,14 @@
           transparent 50%
         ),
         linear-gradient(120deg, #f7f1e6 0%, #efe8db 45%, #f9f4ec 100%);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    html,
+    body {
+      min-height: 100%;
     }
 
     .font-display {
