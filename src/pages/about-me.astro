@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import { jobs } from '../jobs.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import CallToAction from '../components/CallToAction.astro';
 ---
 
 <BaseLayout>
@@ -83,5 +84,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         })
       }
     </div>
-  </section>
+    </section>
+    <CallToAction />
 </BaseLayout>

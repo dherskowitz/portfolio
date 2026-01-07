@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { companies, personalProjects } from '../projects.json';
+import CallToAction from '../components/CallToAction.astro';
 
 const visiblePersonalProjects = personalProjects.filter(
   (project) => project.show
@@ -86,4 +87,5 @@ const visiblePersonalProjects = personalProjects.filter(
       </section>
     )
   }
+  <CallToAction />
 </BaseLayout>
