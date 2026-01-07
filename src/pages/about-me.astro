@@ -1,8 +1,8 @@
 ---
+import CallToAction from '../components/CallToAction.astro';
 import Header from '../components/Header.astro';
 import { jobs } from '../jobs.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import CallToAction from '../components/CallToAction.astro';
 ---
 
 <BaseLayout>
@@ -49,14 +49,6 @@ import CallToAction from '../components/CallToAction.astro';
           </ul>
         </div>
       </div>
-      <p class="pt-4 text-slate-800">
-        I can be contacted on <a
-          href="https://www.linkedin.com/in/daniel-herskowitz-105/"
-          target="_blank"
-          class="text-[color:var(--accent-2)] underline decoration-2 underline-offset-4"
-          >my LinkedIn page.</a
-        >
-      </p>
     </div>
     <div
       class="px-6 py-8 border-2 border-[color:var(--line)] bg-white/80 backdrop-blur reveal reveal-delay-1"
@@ -84,6 +76,6 @@ import CallToAction from '../components/CallToAction.astro';
         })
       }
     </div>
-    </section>
-    <CallToAction />
+  </section>
+  <CallToAction />
 </BaseLayout>
