@@ -3,14 +3,32 @@ const pathname = Astro.url.pathname;
 // const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
-<nav class="flex items-center justify-around col-span-6 p-6 bg-[color:var(--surface-2)] border-2 border-[color:var(--line)] md:col-span-2 md:flex-col lg:flex-row md:border-l-2 reveal reveal-delay-1">
-    <a href="/" class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}>
-      Home
-    </a> 
-    <a href="/my-work" aria-current="page" class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/my-work/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}>
-      My Work
-    </a> 
-    <a href="/about-me" class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/about-me/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}>
-      About Me
-    </a>
-  </nav>
+<nav
+  class="flex items-center justify-around col-span-12 p-6 bg-[color:var(--surface-2)] border-2 border-[color:var(--line)] md:col-span-5 md:flex-col xl:flex-row md:border-l-2 reveal reveal-delay-1"
+>
+  <a
+    href="/"
+    class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}
+  >
+    Home
+  </a>
+  <a
+    href="/my-work/"
+    aria-current="page"
+    class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/my-work/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}
+  >
+    My Work
+  </a>
+  <a
+    href="/about-me/"
+    class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/about-me/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}
+  >
+    About Me
+  </a>
+  <a
+    href="/contact-me/"
+    class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl min-w-max hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/contact-me/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}
+  >
+    Contact Me
+  </a>
+</nav>

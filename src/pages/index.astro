@@ -4,125 +4,143 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout>
-	<div class="grid h-screen grid-cols-6 grid-rows-7 md:grid-rows-3 page-fade">
-		<div
-			class="flex items-center justify-center col-span-6 p-6 bg-[color:var(--tile-dark)] border-2 border-[color:var(--line)] md:col-span-4 md:justify-start reveal"
-		>
-			<div>
-				<h1 class="text-4xl font-semibold text-slate-100 lg:text-6xl font-display">
-					Daniel Herskowitz
-				</h1>
-				<h2 class="text-3xl font-semibold text-[color:var(--accent)] lg:text-5xl font-display">
-					Software Developer
-				</h2>
-			</div>
-		</div>
-		<Nav/>
+  <div class="grid h-screen grid-cols-12 grid-rows-7 md:grid-rows-3 page-fade">
+    <div
+      class="flex items-center justify-center col-span-8 p-6 bg-[color:var(--tile-dark)] border-2 border-[color:var(--line)] md:col-span-7 md:justify-start reveal"
+    >
+      <div>
+        <h1
+          class="text-4xl font-semibold text-slate-100 lg:text-6xl font-display"
+        >
+          Daniel Herskowitz
+        </h1>
+        <h2
+          class="text-3xl font-semibold text-[color:var(--accent)] lg:text-5xl font-display"
+        >
+          Director of Technology / Senior Software Engineer
+        </h2>
+      </div>
+    </div>
+    <Nav />
 
+    <a
+      href="https://www.linkedin.com/in/daniel-herskowitz-105/"
+      target="_blank"
+      class="flex items-center justify-center col-span-3 p-6 transition-all duration-200 border-2 bg-gradient-to-br from-sky-500 to-sky-700 border-[color:var(--line)] md:col-span-3 hover:from-sky-600 hover:to-sky-800 reveal reveal-delay-2"
+      ><div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="text-white stroke-current"
+          ><path d="M0 0h24v24H0z" stroke="none"></path>
+          <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+          <path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 00-4 0"></path></svg
+        >
+        <div class="text-lg text-white">LinkedIn</div>
+      </div></a
+    >
 
-		<a
-			href="https://www.linkedin.com/in/daniel-herskowitz-105/"
-			target="_blank"
-			class="flex items-center justify-center col-span-3 p-6 transition-all duration-200 border-2 bg-gradient-to-br from-sky-500 to-sky-700 border-[color:var(--line)] md:col-span-1 hover:from-sky-600 hover:to-sky-800 reveal reveal-delay-2"
-			><div>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="60"
-					height="60"
-					viewBox="0 0 24 24"
-					stroke="currentColor"
-					fill="none"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="text-white stroke-current"
-					><path d="M0 0h24v24H0z" stroke="none"></path>
-					<rect x="4" y="4" width="16" height="16" rx="2"></rect>
-					<path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 00-4 0"
-					></path></svg
-				>
-				<div class="text-lg text-white">LinkedIn</div>
-			</div></a
-		>
+    <a
+      href="/my-work/"
+      class="relative hidden col-span-6 p-6 py-16 border-2 bg-[color:var(--tile-mid)] border-[color:var(--line)] md:col-span-6 md:py-0 md:flex items-center justify-center group transition-all duration-200 hover:shadow-xl hover:bg-slate-800/80 reveal reveal-delay-3"
+    >
+      <img
+        src="/assets/code.jpg"
+        alt="Code editor background"
+        class="absolute inset-0 w-full h-full object-cover opacity-80 transition-opacity duration-200 group-hover:opacity-90"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-tr from-slate-950/80 via-slate-900/40 to-transparent transition-opacity duration-200 group-hover:opacity-90"
+      >
+      </div>
+      <div class="relative text-center">
+        <span
+          class="inline-block px-10 py-2 text-xl font-semibold text-slate-900 transition-all duration-200 ease-in-out bg-[color:var(--accent)] md:text-3xl group-hover:bg-amber-400 group-hover:shadow-lg"
+          >My Work</span
+        >
+      </div>
+    </a>
 
-		<a
-			href="/my-work"
-			class="relative hidden col-span-6 p-6 py-16 border-2 bg-[color:var(--tile-mid)] border-[color:var(--line)] md:col-span-4 md:py-0 md:flex items-center justify-center group transition-all duration-200 hover:shadow-xl hover:bg-slate-800/80 reveal reveal-delay-3"
-		>
-			<img
-				src="/assets/code.jpg"
-				alt="Code editor background"
-				class="absolute inset-0 w-full h-full object-cover opacity-80 transition-opacity duration-200 group-hover:opacity-90"
-			/>
-			<div class="absolute inset-0 bg-gradient-to-tr from-slate-950/80 via-slate-900/40 to-transparent transition-opacity duration-200 group-hover:opacity-90"></div>
-			<div class="relative text-center">
-				<span
-					class="inline-block px-10 py-2 text-xl font-semibold text-slate-900 transition-all duration-200 ease-in-out bg-[color:var(--accent)] md:text-3xl group-hover:bg-amber-400 group-hover:shadow-lg"
-					>My Work</span
-				>
-			</div>
-		</a>
+    <a
+      href="https://github.com/dherskowitz"
+      target="_blank"
+      class="flex items-center justify-center col-span-3 p-6 transition-all duration-200 border-2 bg-[color:var(--tile-mid)] border-[color:var(--line)] md:col-span-3 hover:bg-[color:var(--tile-dark)] reveal reveal-delay-4"
+      ><div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="text-white stroke-current"
+          ><path d="M0 0h24v24H0z" stroke="none"></path>
+          <path
+            d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"
+          ></path></svg
+        >
+        <div class="text-lg text-white">Github</div>
+      </div></a
+    >
 
-		<a
-			href="https://github.com/dherskowitz"
-			target="_blank"
-			class="flex items-center justify-center col-span-3 p-6 transition-all duration-200 border-2 bg-[color:var(--tile-mid)] border-[color:var(--line)] md:col-span-1 hover:bg-[color:var(--tile-dark)] reveal reveal-delay-4"
-			><div>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="60"
-					height="60"
-					viewBox="0 0 24 24"
-					stroke="currentColor"
-					fill="none"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="text-white stroke-current"
-					><path d="M0 0h24v24H0z" stroke="none"></path>
-					<path
-						d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"
-					></path></svg
-				>
-				<div class="text-lg text-white">Github</div>
-			</div></a
-		>
+    <a
+      href="/my-work/"
+      class="relative flex flex-col items-center justify-center col-span-6 p-6 py-16 border-2 bg-[color:var(--tile-mid)] border-[color:var(--line)] md:col-span-6 md:py-0 md:hidden group transition-all duration-200 hover:shadow-xl hover:bg-slate-800/80 reveal reveal-delay-3"
+    >
+      <img
+        src="/assets/code.jpg"
+        alt="Code editor background"
+        class="absolute inset-0 w-full h-full object-cover opacity-80 transition-opacity duration-200 group-hover:opacity-90"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-tr from-slate-950/80 via-slate-900/40 to-transparent transition-opacity duration-200 group-hover:opacity-90"
+      >
+      </div>
+      <div class="relative text-center">
+        <span
+          class="inline-block px-10 py-2 text-xl font-semibold text-slate-900 transition-all duration-200 ease-in-out bg-[color:var(--accent)] md:text-3xl group-hover:bg-amber-400 group-hover:shadow-lg"
+          >My Work</span
+        >
+      </div>
+    </a>
 
-		<a
-			href="/my-work"
-			class="relative flex flex-col items-center justify-center col-span-6 p-6 py-16 border-2 bg-[color:var(--tile-mid)] border-[color:var(--line)] md:col-span-4 md:py-0 md:hidden group transition-all duration-200 hover:shadow-xl hover:bg-slate-800/80 reveal reveal-delay-3"
-		>
-			<img
-				src="/assets/code.jpg"
-				alt="Code editor background"
-				class="absolute inset-0 w-full h-full object-cover opacity-80 transition-opacity duration-200 group-hover:opacity-90"
-			/>
-			<div class="absolute inset-0 bg-gradient-to-tr from-slate-950/80 via-slate-900/40 to-transparent transition-opacity duration-200 group-hover:opacity-90"></div>
-			<div class="relative text-center">
-				<span
-					class="inline-block px-10 py-2 text-xl font-semibold text-slate-900 transition-all duration-200 ease-in-out bg-[color:var(--accent)] md:text-3xl group-hover:bg-amber-400 group-hover:shadow-lg"
-					>My Work</span
-				>
-			</div>
-		</a>
+    <a
+      href="/about-me/"
+      class="flex flex-col items-center justify-center col-span-6 py-16 text-center border-2 bg-[color:var(--surface-2)] border-[color:var(--line)] md:col-span-4 md:py-0 reveal reveal-delay-2 transition-all duration-200 hover:shadow-xl hover:bg-emerald-50 group"
+    >
+      <span
+        class="inline-block px-4 py-2 text-xl font-semibold text-slate-50 transition-all duration-200 ease-in-out bg-[color:var(--tile-dark)] md:text-2xl lg:text-3xl group-hover:bg-[color:var(--tile-mid)]"
+        >My History &amp; Experience</span
+      >
+    </a>
 
-		<a
-			href="/about-me"
-			class="flex flex-col items-center justify-center col-span-6 py-16 text-center border-2 bg-[color:var(--surface-2)] border-[color:var(--line)] md:col-span-3 md:py-0 reveal reveal-delay-2 transition-all duration-200 hover:shadow-xl hover:bg-emerald-50 group"
-		>
-			<span
-				class="inline-block px-4 py-2 text-xl font-semibold text-slate-50 transition-all duration-200 ease-in-out bg-[color:var(--tile-dark)] md:text-2xl lg:text-3xl group-hover:bg-[color:var(--tile-mid)]"
-				>My History &amp; Experience</span
-			>
-		</a>
+    <a
+      href="/assets/Daniel Herskowitz Resume.pdf"
+      target="_blank"
+      class="flex flex-col items-center justify-center col-span-6 px-4 py-16 text-center border-2 bg-[color:var(--tile-dark)] border-[color:var(--line)] md:col-span-4 md:py-0 reveal reveal-delay-3 transition-all duration-200 hover:shadow-xl hover:bg-slate-900 group"
+    >
+      <span
+        class="inline-block px-4 py-2 text-xl font-semibold text-white capitalize transition-all duration-200 ease-in-out bg-[color:var(--accent-2)] md:text-2xl lg:text-3xl group-hover:bg-emerald-600"
+        >Download my resume as a PDF</span
+      >
+    </a>
 
-		<a
-			href="/assets/Daniel Herskowitz Resume.pdf"
-			target="_blank"
-			class="flex flex-col items-center justify-center col-span-6 px-4 py-16 text-center border-2 bg-[color:var(--tile-dark)] border-[color:var(--line)] md:col-span-3 md:py-0 reveal reveal-delay-3 transition-all duration-200 hover:shadow-xl hover:bg-slate-900 group"
-		>
-			<span
-				class="inline-block px-4 py-2 text-xl font-semibold text-white capitalize transition-all duration-200 ease-in-out bg-[color:var(--accent-2)] md:text-2xl lg:text-3xl group-hover:bg-emerald-600"
-				>Download my resume as a PDF</span
-			>
-		</a>
-	</div>
+    <a
+      href="/contact/"
+      class="flex flex-col items-center justify-center col-span-6 py-16 text-center border-2 bg-gradient-to-br from-sky-700 via-slate-800 to-slate-900 border-[color:var(--line)] md:col-span-4 md:py-0 reveal reveal-delay-2 transition-all duration-200 hover:shadow-xl hover:from-sky-600 hover:via-slate-700 hover:to-slate-800 group"
+    >
+      <span
+        class="inline-flex items-center gap-2 px-4 py-2 text-xl font-semibold text-slate-900 transition-all duration-200 ease-in-out bg-[color:var(--accent)] md:text-2xl lg:text-3xl group-hover:bg-amber-300"
+        >Contact Me</span
+      >
+    </a>
+  </div>
 </BaseLayout>

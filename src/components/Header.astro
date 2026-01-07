@@ -2,14 +2,20 @@
 import Nav from './Nav.astro';
 ---
 
-<section class="grid grid-cols-6 border-b-2 border-[color:var(--line)] page-fade">
-    <div class="flex flex-col justify-center col-span-6 p-6 bg-[color:var(--tile-dark)] border-2 border-[color:var(--line)] md:col-span-4 md:justify-start reveal">
-        <h1 class="text-4xl font-semibold text-slate-100 lg:text-6xl font-display">
-            Daniel Herskowitz
-        </h1>
-        <h2 class="text-3xl font-semibold text-[color:var(--accent)] lg:text-5xl font-display">
-            Director of Technology / Senior Software Engineer
-        </h2>
-    </div>
-    <Nav>
+<section
+  class="grid grid-cols-12 border-b-2 border-[color:var(--line)] page-fade"
+>
+  <div
+    class="flex flex-col justify-center col-span-12 p-6 bg-[color:var(--tile-dark)] border-2 border-[color:var(--line)] md:col-span-7 md:justify-start reveal"
+  >
+    <h1 class="text-4xl font-semibold text-slate-100 lg:text-6xl font-display">
+      Daniel Herskowitz
+    </h1>
+    <h2
+      class="text-3xl font-semibold text-[color:var(--accent)] lg:text-5xl font-display"
+    >
+      Director of Technology / Senior Software Engineer
+    </h2>
+  </div>
+  <Nav />
 </section>
