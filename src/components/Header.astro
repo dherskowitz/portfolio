@@ -2,15 +2,14 @@
 import Nav from './Nav.astro';
 ---
 
-<section class="grid grid-cols-6 border-b-2 border-gray-800">
-    <div class="flex flex-col justify-center col-span-6 p-6 text-white bg-purple-900 border-2 border-gray-800 md:col-span-4 md:justify-start">
-        <h1 class="text-3xl font-semibold text-gray-400 lg:text-5xl">
+<section class="grid grid-cols-6 border-b-2 border-[color:var(--line)] page-fade">
+    <div class="flex flex-col justify-center col-span-6 p-6 bg-[color:var(--tile-dark)] border-2 border-[color:var(--line)] md:col-span-4 md:justify-start reveal">
+        <h1 class="text-3xl font-semibold text-slate-100 lg:text-5xl font-display">
             Daniel Herskowitz
         </h1>
-        <h2 class="text-4xl font-semibold text-gray-200 lg:text-6xl">
+        <h2 class="text-4xl font-semibold text-[color:var(--accent)] lg:text-6xl font-display">
             Software Developer
         </h2>
     </div>
     <Nav>
 </section>
-

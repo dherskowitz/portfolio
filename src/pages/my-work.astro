@@ -7,24 +7,24 @@ import { large, small } from '../projects.json';
 <BaseLayout>
     <Header />
 
-    <section class="container m-4 text-gray-800 mx-auto px-4 flex gap-4 flex-col">
+    <section class="container m-4 text-slate-900 mx-auto px-4 flex gap-4 flex-col page-fade">
         {
             large.map((project) => {
                 return (
-                    <div class="col-span-3 p-6 border-2 border-gray-800 md:col-span-2 lg:col-span-3">
+                    <div class="col-span-3 p-6 border-2 border-[color:var(--line)] bg-[color:var(--surface-2)] md:col-span-2 lg:col-span-3 reveal">
                         <div>
-                            <div class="text-5xl font-bold">{project.title}</div>
-                            <div class="text-2xl font-semibold">{project.subtitle}</div>
-                            <div class="pb-2">{project.stack}</div>
+                            <div class="text-5xl font-bold font-display">{project.title}</div>
+                            <div class="text-2xl font-semibold text-slate-700">{project.subtitle}</div>
+                            <div class="pb-2 text-slate-600">{project.stack}</div>
                         </div>
                         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                             {project.projects.map((project) => {
                                 return (
-                                    <div class="p-4 mt-2 border-2 border-gray-600">
-                                        <div class="text-xl font-bold">
+                                    <div class="p-4 mt-2 border-2 border-[color:var(--line)] bg-white/80">
+                                        <div class="text-xl font-bold text-slate-900">
                                             {project.title}
                                         </div>
-                                        <p class="pb-2">
+                                        <p class="pb-2 text-slate-700">
                                             {project.description}
                                         </p>
                                     </div>
@@ -38,27 +38,27 @@ import { large, small } from '../projects.json';
     </section>
 
     <section
-        class="container m-4 text-gray-800 mx-auto px-4 flex gap-4 flex-col"
+        class="container m-4 text-slate-900 mx-auto px-4 flex gap-4 flex-col"
     >
-    <div class="col-span-3 p-6 border-2 border-gray-800 md:col-span-2 lg:col-span-3">
-        <div class="text-5xl font-bold pb-4">Personal Projects</div>
+    <div class="col-span-3 p-6 border-2 border-[color:var(--line)] bg-white/80 backdrop-blur md:col-span-2 lg:col-span-3 reveal reveal-delay-1">
+        <div class="text-5xl font-bold pb-4 font-display">Personal Projects</div>
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {
                 small.map((project) => {
                     return (
-                        <div class="flex flex-col justify-between col-span-3 p-6 border-2 border-gray-800 md:col-span-1">
-                            <div class="text-xl font-bold">{project.title}</div>
-                            <p class="pb-2 break-words text-gray-600">
+                        <div class="flex flex-col justify-between col-span-3 p-6 border-2 border-[color:var(--line)] bg-[color:var(--surface-2)] md:col-span-1">
+                            <div class="text-xl font-bold text-slate-900">{project.title}</div>
+                            <p class="pb-2 break-words text-slate-600">
                                 Built with {project.stack}
                             </p>
-                            <div class="pb-2">{project.description}</div>
+                            <div class="pb-2 text-slate-700">{project.description}</div>
                             <div>
                                 {project.buttons.map((button) => {
                                     return (
                                         <a
                                             href={button.link}
                                             target="_blank"
-                                            class="block px-10 py-2 mt-2 text-base font-semibold text-center text-white transition-all duration-150 ease-in-out bg-green-900 hover:shadow-xl hover:bg-green-700"
+                                            class="block px-10 py-2 mt-2 text-base font-semibold text-center text-white transition-all duration-200 ease-in-out bg-[color:var(--accent-2)] hover:shadow-xl hover:-translate-y-0.5 hover:bg-emerald-600"
                                         >
                                             {button.title}
                                         </a>

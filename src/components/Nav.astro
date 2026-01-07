@@ -3,20 +3,14 @@ const pathname = Astro.url.pathname;
 // const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
-<nav class="flex items-center justify-around col-span-6 p-6 border-gray-800 md:col-span-2 md:flex-col lg:flex-row md:border-l-2">
-    <a href="/" class="p-2 text-xl font-semibold text-center border-b-2 lg:text-2xl hover:border-gray-800" id={pathname === '/' ? 'active' : ''}>
+<nav class="flex items-center justify-around col-span-6 p-6 bg-[color:var(--surface-2)] border-2 border-[color:var(--line)] md:col-span-2 md:flex-col lg:flex-row md:border-l-2 reveal reveal-delay-1">
+    <a href="/" class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}>
       Home
     </a> 
-    <a href="/my-work" aria-current="page" class="p-2 text-xl font-semibold text-center border-b-2 lg:text-2xl hover:border-gray-800" id={pathname === '/my-work/' ? 'active' : ''}>
+    <a href="/my-work" aria-current="page" class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/my-work/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}>
       My Work
     </a> 
-    <a href="/about-me" class="p-2 text-xl font-semibold text-center border-b-2 lg:text-2xl hover:border-gray-800" id={pathname === '/about-me/' ? 'active' : ''}>
+    <a href="/about-me" class={`p-2 text-xl font-semibold text-center border-b-2 border-transparent text-slate-900 lg:text-2xl hover:text-[color:var(--accent-2)] hover:border-[color:var(--accent-2)] ${pathname === '/about-me/' ? 'text-[color:var(--accent-2)] border-[color:var(--accent-2)]' : ''}`}>
       About Me
     </a>
   </nav>
-
-  <style>
-    #active {
-      @apply border-gray-700
-    }
-  </style>
